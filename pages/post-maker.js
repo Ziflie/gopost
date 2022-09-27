@@ -37,7 +37,7 @@ export default function PostMaker() {
             <label className="pb-12 text-4xl md:text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl ">
               Before you are going to say something, what is your name?
             </label>
-            <input className="" placeholder="John Doe" name="name" />
+            <input className="" placeholder="John Doe" name="name" required />
           </div>
 
           {/* title fill in form */}
@@ -47,8 +47,9 @@ export default function PostMaker() {
             </h1>
             <input
               className=""
-              placeholder="Title of your  post"
+              placeholder="Title of your post"
               name="title"
+              required
             />
           </div>
 
@@ -56,17 +57,21 @@ export default function PostMaker() {
             <label className="pb-12 text-4xl md:text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
               Put an image link
             </label>
-            <input className="" placeholder="vul shit tekst in" name="image" />
+            <input className="" placeholder="Put a valid image link" name="image" required />
           </div>
 
           <div className="grid justify-start col-span-4 pt-40 md:pl-24">
             <label className="pb-12 text-4xl md:text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-              Write your blog!
+            Sooo... What do you have to say?
+            <p className="invisible">??????????????????????????????????????????????????????????????????</p>
             </label>
-            <input
+            <textarea
               className=""
-              placeholder="vul shit tekst in"
+              placeholder="Soo...?"
               name="blogPost"
+              rows="12" 
+              cols="80"
+              required
             />
           </div>
 
